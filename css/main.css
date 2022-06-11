@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Lato:wght@100;300;400&family=Manrope:wght@200;300;400;500;800&family=Outfit:wght@400;700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    width: 100vw;
+    color: hsl(240, 38%, 20%);
+    font-family: 'Inter', sans-serif;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* main */
+
+main{
+    height: 100%;
+    max-width: 100%;
+    padding:3rem 2rem;
+    text-align: center;
+    position: relative;
+    background-image: url("../images/pattern-bg.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main img{
+    max-height: 40vh;
+    width: 100%;
+    display: block;
+    border-radius: 10px ;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+p {
+    font-size: 3rem;
+}
+#para {
+    font-weight: 300;
+    font-size: 2rem;
+    color: hsl(240, 21%, 29%);
+}
+span {
+    color: hsl(240, 18%, 77%);
+    font-size: 1.7rem;
+}
+a {
+    text-decoration: none;
+}
+
+/* paragraph content */
+
+.content{
+    padding: 6rem 0 3rem 0;
+    text-align: center;
+    width: 90%;
+    z-index: 2;
+}
+.text{
+    padding-top: 2.2rem;
+}
+
+/* buttons */
+
+.btnContainer{
+    width: 38%;
+    padding: 2.5%;
+    border-radius: 2.5rem;
+    background-color: hsl(240, 18%, 77%);
+    position: absolute;
+    left: 31%;
+    top: 87%;
+}
+button{
+    border: none;
+    background-color: hsl(240, 18%, 77%);
+}
+button:hover{
+    border: 1px solid hsl(240, 17%, 55%);
+    border-radius: 10px;
+}
+svg {
+    cursor: pointer;
+    margin: 0 1.5rem;
+}
+
+.footer {
+    height: 10vh;
+    min-width: 100%;
+    padding: 5rem 0rem;
+    text-align: center;
+    position: absolute;
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 90rem;
+}
+
+
+/* media queries */
+
+@media all and (max-width:380px) {
+    main img {
+        min-height: 32vh;
+        min-width: 70vw;
+    }
+    .btnContainer {
+        min-width: 11rem;
+        max-width: 12rem;
+        padding: 1rem;
+        border-radius: 2.5rem;
+        left: 25%;
+        top: 86%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width:759px) and (max-width:970px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 0 5rem;
+    }
+    main {
+        height: 50%;
+        width: 100%;
+    }
+    main {
+        max-width: 45%;
+        padding: 3rem 2rem;
+        margin: 0 1rem;
+        padding: 0 10rem;
+    }
+    .btnContainer {
+        max-width: 35%;
+        padding: 0.7rem 1rem;
+        border-radius: 2.5rem;
+        background-color: hsl(240, 18%, 77%);
+        position: absolute;
+        left: 35%;
+        top: 86%;
+    }
+    main img {
+        min-height: 40rem;
+        min-width: 38rem;
+        display: block;
+        border-radius: 10px;
+    }
+    .content {
+        max-width: 48vw;
+        text-align: left;
+        line-height: 3rem;
+    }
+    #para {
+        font-size: 2rem;
+    }
+    .text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    span {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+    #name {
+        max-width: 40%;
+        min-height: 10%;
+    }
+    #title {
+        max-width: 45%;
+    }
+}
+
+
+@media (min-width:971px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding: 0 13rem;
+    }
+    main{
+        height: 50%;
+        width: 100%;
+    }
+    main {
+        max-width: 30%;
+        padding: 3rem 2rem;
+        margin: 0 1rem;
+        padding: 0 20rem;
+        }
+    .btnContainer {
+        max-width: 28%;
+        padding: 0.5rem 1rem ;
+        position: absolute;
+        left: 0%;
+        top: 86%;
+    }
+    main img {
+        max-height: 40rem;
+        min-width:48rem;
+    }
+    .content{
+        max-width: 37vw;
+        text-align: left;
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+    #para{
+        font-size: 2.5rem;
+    }
+    .text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    span{
+        padding-left: 1rem;
+        font-size: 1.7rem;
+    }
+    #name{
+        max-width: 45%;
+        min-height: 10%;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    #title{
+        max-width: 40%;
+    }
+}
+@media  (min-width:1440px) {
+    .content {
+        max-width: 25vw;
+        text-align: left;
+        line-height: 3rem;
+        font-size: 2rem;
+        z-index: 2;
+        }
+    body{
+        padding: 0 34rem;
+    }
+    #para{
+        font-size: 2.5rem;
+    }
+        .btnContainer {
+            max-width: 28%;
+            padding: 0.5rem 1rem;
+            position: absolute;
+            left: 0%;
+            top: 85%;
+        }
+}
+
+
