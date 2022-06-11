@@ -163,7 +163,7 @@ svg {
         background-color: hsl(240, 18%, 77%);
         position: absolute;
         left: 35%;
-        top: 86%;
+        top: 83%;
     }
     main img {
         min-height: 40rem;
@@ -223,7 +223,7 @@ svg {
         padding: 0.5rem 1rem ;
         position: absolute;
         left: 0%;
-        top: 86%;
+        top: 89%;
     }
     main img {
         max-height: 40rem;
@@ -277,7 +277,7 @@ svg {
             padding: 0.5rem 1rem;
             position: absolute;
             left: 0%;
-            top: 85%;
+            top: 83%;
         }
 }
 
