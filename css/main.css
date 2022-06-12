@@ -105,6 +105,7 @@ svg {
 }
 
 .footer {
+    min-height: 7vh;
     min-width: 100%;
     padding: 2rem 0rem;
     text-align: center;
@@ -147,7 +148,9 @@ svg {
         font-size: 1.7rem;
         width: 100%;
     }    
-    
+        .footer {
+            min-height: 5vh;
+        }
 }
 
 @media (min-width:759px) and (max-width:970px) {
@@ -203,6 +206,9 @@ svg {
     #title {
         max-width: 45%;
     }
+        .footer {
+            min-height: 10vh;
+        }
 }
 
 
@@ -264,7 +270,11 @@ svg {
     #title{
         max-width: 40%;
     }
+        .footer {
+            min-height: 15vh;
+        }
 }
+
 @media  (min-width:1440px) {
     .content {
         max-width: 25vw;
@@ -284,6 +294,7 @@ svg {
             position: absolute;
             left: 35px;
         }
+        
 }
 
 
