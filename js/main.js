@@ -1,7 +1,7 @@
 const reviews = [
     {
         id: 1,
-        name: 'Micheal Smith',
+        name: 'Michel Smith',
         title: 'HR',
         image:
         "https://i.ibb.co/TYgpdwt/pexels-photo-11114420.jpg" ,

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 html{
     font-size: 62.5%;
@@ -13,10 +14,10 @@ body{
     width: 100vw;
     color: hsl(240, 38%, 20%);
     font-family: 'Inter', sans-serif;
-    padding: 5rem 2rem;
+    /* padding: 5rem 2rem; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-evenly; */
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -26,7 +27,7 @@ body{
 /* main */
 
 main{
-    max-height: 100%;
+    max-height: 48%;
     max-width: 100%;
     padding:3rem 2rem;
     text-align: center;
@@ -34,30 +35,32 @@ main{
     background-image: url("../images/pattern-bg.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin: 0 1rem;
-    display: flex;
+    margin: 4rem 1rem;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .imageSection{
     position: relative;
 }
 main img{
-    max-height: 48vh;
-    width: 100%;
+    max-height: 37rem;
+    width: 35rem;
     display: block;
     border-radius: 10px ;
 }
+
+
 h3 {
     font-size: 2rem;
     line-height: 2.5rem;
 }
 p {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 #para {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: hsl(240, 21%, 29%);
 }
 span {
@@ -83,12 +86,12 @@ a {
 /* buttons */
 
 .btnContainer{
-    width: 38%;
-    padding: 2%;
+    max-width: 47%;
+    padding: 3.5%;
     border-radius: 2.5rem;
     background-color: hsl(240, 18%, 77%);
     position: absolute;
-    left: 31%;
+    left: 38%;
     bottom: -12px;
 }
 button{
@@ -122,8 +125,8 @@ svg {
 
 @media all and (max-width:380px) {
     main img {
-        height: 35vh;
-        min-width: 80vw;
+        height: 38vh;
+        max-width: 80vw;
     }
     .btnContainer {
         min-width: 11rem;
@@ -135,21 +138,20 @@ svg {
         margin: auto;
     }
         main {
-            height: 50%;
-            width: 100%;
-            margin-top: -3rem;
+            height: 43%;
+            max-width: 100%;
         }
         .content{
-            margin-top: 1rem;
-            max-height: 42vh;
+            margin-top: 2.5rem;
+            max-height: 44vh;
             padding: 1rem 0;
         }
     #para{
-        font-size: 1.7rem;
+        font-size: 2rem;
         width: 100%;
     }    
         .footer {
-            min-height: 5vh;
+            min-height: 7vh;
         }
 }
 
@@ -160,35 +162,35 @@ svg {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
     main {
-        height: 50%;
+        height: 41%;
     }
     main {
-        min-width: 33vw;
+        /* max-width: 30rem; */
         margin: 0 1rem;
     }
     .btnContainer {
-        max-width: 40%;
+        max-width: 100%;
         border-radius: 2.5rem;
         background-color: hsl(240, 18%, 77%);
         position: absolute;
         left: 35%;
     }
     main img {
-        max-height: 36rem;
-        min-width: 34vw;
+        max-height: 34rem;
+        min-width: 28vw;
         display: block;
         border-radius: 10px;
     }
     .content {
-        max-width: 48vw;
+        max-width: 45vw;
         text-align: left;
         line-height: 3rem;
     }
     #para {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .text {
         display: flex;
@@ -200,11 +202,11 @@ svg {
         font-size: 1.5rem;
     }
     #name {
-        max-width: 52%;
+        max-width: 53%;
         min-height: 10%;
     }
     #title {
-        max-width: 45%;
+        max-width: 47%;
     }
         .footer {
             min-height: 10vh;
@@ -222,23 +224,27 @@ svg {
         padding: 0 5rem;
     }
     main{
-        height: 45%;
+        height: 50%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     main {
-        max-width: 30%;
+        max-width: 37%;
         padding: 3rem 2rem;
         margin: 0 1rem;
         padding: 0 20rem;
         }
     .btnContainer {
         max-width: 30%;
+        padding: 2.5%;
         position: absolute;
         left: 35px;
     }
     main img {
-        max-height: 32rem;
-        min-width:35rem;
+        max-height: 40rem;
+        min-width:38rem;
     }
     .content{
         min-width: 30vw;
@@ -268,7 +274,7 @@ svg {
         font-size: 1.8rem;
     }
     #title{
-        max-width: 40%;
+        max-width: 45%;
     }
         .footer {
             min-height: 15vh;
@@ -277,24 +283,34 @@ svg {
 
 @media  (min-width:1440px) {
     .content {
-        max-width: 25vw;
-        text-align: left;
-        line-height: 3rem;
-        font-size: 2rem;
-        z-index: 2;
+            max-width: 22vw;
+            text-align: left;
+            line-height: 3rem;
+            font-size: 2rem;
+            z-index: 2;
         }
-    body{
-        padding: 0 34rem;
-    }
-    #para{
-        font-size: 2.5rem;
-    }
-        .btnContainer {
+    
+        body {
+            padding: 0 34rem;
+        }
+    
+        /* #para {
+            font-size: 2.5rem;
+        } */
+    
+        /* .btnContainer {
             max-width: 30%;
             position: absolute;
             left: 35px;
+        } */
+        main{
+            max-width: 46%;
         }
-        
+    main img {
+        max-height: 40rem;
+        min-width: 38rem;
+        max-width: 40rem;
+    }
 }
 
 
