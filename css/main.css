@@ -237,8 +237,8 @@ svg {
         left: 35px;
     }
     main img {
-        max-height: 38rem;
-        min-width:35rem;
+        max-height: 32rem;
+        min-width:35grem;
     }
     .content{
         min-width: 30vw;
