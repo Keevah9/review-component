@@ -56,7 +56,7 @@ function showReview(personReview){
 }
 
 prevButton.addEventListener('click', function(){
-    currentReview --
+    currentReview--
     if (currentReview < 0){
         currentReview = reviews.length - 1
     }
